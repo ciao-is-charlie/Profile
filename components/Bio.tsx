@@ -8,7 +8,7 @@ interface BioProps {
 const Bio: React.FC<BioProps> = ({ children }) => {
   return (
     <div className="border-l-2 border-red-500/50 pl-4">
-      <p className="text-stone-300 leading-relaxed">
+      <p className="text-stone-300 leading-relaxed whitespace-pre-line">
         {children}
       </p>
     </div>
