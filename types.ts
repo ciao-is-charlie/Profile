@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export interface LinkBlockData {
@@ -5,5 +6,12 @@ export interface LinkBlockData {
   title: string;
   url: string;
   imageUrl?: string;
-  rightIcon?: React.ReactNode;
+  icon?: string; // Icon name from data.json
+  rightIcon?: React.ReactNode; // The actual component to render
+  isIconBackground?: boolean;
+}
+
+export interface SocialLink {
+  name: string;
+  url: string;
 }

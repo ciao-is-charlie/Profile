@@ -1,0 +1,50 @@
+{
+  "profile": {
+    "name": "Charlie",
+    "avatarUrl": "https://cdn.midjourney.com/42082cd4-64a9-460a-881a-1c6774a5d17b/0_0.png"
+  },
+  "socials": [
+    {
+      "name": "Threads",
+      "url": "https://www.threads.com/@ciao.is.charlie"
+    }
+  ],
+  "bio": "Welcome to my digital space. I'm passionate about art, technology, and creating beautiful things. Feel free to explore my work and get in touch.",
+  "links": [
+    {
+      "id": 1,
+      "title": "查理事務所",
+      "url": "https://discord.gg/FB42uFa5Wd",
+      "imageUrl": "https://cdn.midjourney.com/0ce2cb00-5d85-4405-ab59-77a7e9bc7b2e/0_0.png",
+      "icon": "discord"
+    },
+    {
+      "id": 2,
+      "title": "卿卿我我",
+      "url": "https://abr.ge/oz2uc4$0",
+      "imageUrl": "https://cdn.midjourney.com/53ba374f-7765-40ae-84e8-a376b83dbe05/0_3.png"
+    },
+    {
+      "id": 3,
+      "title": "作品集",
+      "url": "#",
+      "imageUrl": "https://cdn.midjourney.com/42082cd4-64a9-460a-881a-1c6774a5d17b/0_0.png"
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "imageUrl": "https://cdn.midjourney.com/bc853ce0-26c5-47d0-91ca-91bc0f00ca0a/0_1.png",
+      "name": "諾拉",
+      "description": "（測試）",
+      "imagePosition": "left"
+    },
+        {
+      "id": 2,
+      "imageUrl": "https://cdn.midjourney.com/bc853ce0-26c5-47d0-91ca-91bc0f00ca0a/0_1.png",
+      "name": "諾拉",
+      "description": "（測試）",
+      "imagePosition": "right"
+    }
+  ]
+}
