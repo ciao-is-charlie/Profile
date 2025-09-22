@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
-import { LinkBlockData, SocialLink } from './types';
-import Avatar from './components/Avatar';
-import SocialLinks from './components/SocialLinks';
-import Bio from './components/Bio';
-import LinkBlock from './components/LinkBlock';
-import { DiscordIcon } from './components/Icons';
-import CharacterSection from './components/CharacterSection';
+import { LinkBlockData, SocialLink } from './types.ts';
+import Avatar from './components/Avatar.tsx';
+import SocialLinks from './components/SocialLinks.tsx';
+import Bio from './components/Bio.tsx';
+import LinkBlock from './components/LinkBlock.tsx';
+import { DiscordIcon } from './components/Icons.tsx';
+import CharacterSection from './components/CharacterSection.tsx';
 
 // A helper function to map icon strings from data.json to actual components
 const getIconComponent = (iconName?: string): React.ReactNode | null => {

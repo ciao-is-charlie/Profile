@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { ThreadsIcon } from './Icons';
-import { SocialLink } from '../types';
+import { ThreadsIcon } from './Icons.tsx';
+import { SocialLink } from '../types.ts';
 
 // A helper to get the right icon component based on the name
 const getSocialIcon = (name: string) => {
