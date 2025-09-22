@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>查理 | Profile</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'fleur': ['"Fleur De Leah"', 'cursive'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Custom Web Thumbnail / Social Media Preview -->
+    <meta property="og:title" content="查理 | Personal Profile" />
+    <meta property="og:description" content="Welcome to my personal page." />
+    <!-- Replace this URL with a link to your custom 1200x630px preview image -->
+    <meta property="og:image" content="https://picsum.photos/seed/charlieprofile/1200/630" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="查理 | Personal Profile" />
+    <meta name="twitter:description" content="Welcome to my personal page." />
+    <!-- Replace this URL with a link to your custom preview image -->
+    <meta name="twitter:image" content="https://picsum.photos/seed/charlieprofile/1200/630" />
+
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

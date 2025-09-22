@@ -1,0 +1,5 @@
+{
+  "name": "Personal Profile Card",
+  "description": "A personal profile card webpage, similar to Carrd or Linktree, designed to be hosted on GitHub Pages. It features a full-width avatar, social media links, a biography, and customizable link blocks.",
+  "requestFramePermissions": []
+}
