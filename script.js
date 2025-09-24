@@ -49,11 +49,14 @@
       );
     };
 
-    const LinkBlock = ({ title, url, imageUrl, rightIcon, isIconBackground }) => {
+    const LinkBlock = ({ id, title, url, imageUrl, rightIcon, isIconBackground }) => {
       const cardRef = useRef(null);
+      const isGlassButton = id === 1;
+
       useEffect(() => {
+        if (isGlassButton || !cardRef.current) return;
+        
         const card = cardRef.current;
-        if (!card) return;
         const handleMouseMove = (e) => {
           const rect = card.getBoundingClientRect();
           const x = e.clientX - rect.left;
@@ -65,26 +68,31 @@
         return () => {
           card.removeEventListener('mousemove', handleMouseMove);
         };
-      }, []);
+      }, [isGlassButton]);
 
-      const baseClasses = "relative flex items-center p-3 bg-transparent backdrop-blur-md rounded-full border border-t-white/20 border-l-white/20 border-b-white/5 border-r-white/5 shadow-lg shadow-black/30 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 overflow-hidden";
+      let linkClasses;
+      if (isGlassButton) {
+        linkClasses = "liquid-glass-button w-full relative flex items-center overflow-hidden";
+      } else {
+        linkClasses = "relative flex items-center p-3 bg-transparent backdrop-blur-md rounded-full border border-t-white/20 border-l-white/20 border-b-white/5 border-r-white/5 shadow-lg shadow-black/30 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 overflow-hidden liquid-effect-base liquid-link";
+      }
       
       return e('a', {
           ref: cardRef,
           href: url,
           target: "_blank",
           rel: "noopener noreferrer",
-          className: `${baseClasses} liquid-effect-base liquid-link`
+          className: linkClasses
         },
         isIconBackground && rightIcon && e('div', {
           'aria-hidden': "true",
           className: "absolute inset-y-0 right-0 w-2/5 flex justify-center items-center z-0"
         }, e('div', { className: "text-stone-400 w-48 h-48 opacity-10" }, rightIcon)),
         e('div', { className: "relative z-10 flex items-center w-full" },
-          imageUrl && e('div', { className: "w-16 h-16 ml-1 mr-2 flex-shrink-0" },
+          imageUrl && e('div', { className: `w-16 h-16 ${isGlassButton ? '' : 'ml-1'} mr-2 flex-shrink-0` },
             e('img', { src: imageUrl, alt: title, className: "w-full h-full object-cover rounded-full" })
           ),
-          e('span', { className: "font-semibold text-lg text-stone-200 flex-grow text-left pl-2" }, title),
+          e('span', { className: `font-semibold text-lg text-stone-200 flex-grow text-left ${isGlassButton ? '' : 'pl-2'}` }, title),
           !isIconBackground && rightIcon && e('div', { className: "ml-4 flex-shrink-0 pr-2" },
             e('div', { className: "w-16 h-16 flex-shrink-0 flex items-center justify-center" },
               e('div', { className: "text-stone-400 w-16 h-16 opacity-20" }, rightIcon)
