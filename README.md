@@ -1,6 +1,6 @@
 # 個人化頁面使用說明書
 
-歡迎使用！這份指南將引導您如何修改這個專案的各個部分，從頭像、標題到發佈至網路，讓您完全掌握您的個人頁面。
+歡迎使用！這個專案已經被轉換為可以直接發布的靜態網站（HTML, CSS, JS）。這份指南將引導您如何修改這個專案的各個部分。
 
 ## 快速開始
 
@@ -51,24 +51,30 @@
         }
       }
       ```
-4.  **修改 `App.tsx`**：
-    -   打開 `App.tsx` 檔案。
-    -   找到 `<h1>` 標籤，將 `font-fleur` 這個 class 改成您剛剛設定的新字體名稱，例如 `font-new-font`。
+4.  **修改 `script.js`**：
+    -   打開 `script.js` 檔案。
+    -   搜尋 `font-fleur` 來找到標題（`<h1>`）的設定行。
+    -   將 `font-fleur` 這個 class 改成您剛剛設定的新字體名稱，例如 `font-new-font`。
 
 #### 調整標題大小
 
--   在 `App.tsx` 的 `<h1>` 標籤中，您會看到一個 `text-8xl` 的 class。
--   您可以將它修改為 Tailwind CSS 提供的其他尺寸，例如 `text-7xl` (稍小) 或 `text-9xl` (更大)。
+-   在 `script.js` 中，找到建立標題 `<h1>` 的那一行程式碼。
+-   您會看到一個 `text-8xl` 的 class。您可以將它修改為 Tailwind CSS 提供的其他尺寸，例如 `text-7xl` (稍小) 或 `text-9xl` (更大)。
 
 ### 3. 更改背景配色
 
-1.  **打開 `index.html` 檔案**。
-2.  **找到 `<body>` 標籤**：您會看到 `style="background-color: #0b0d1a;"`。
+1.  **打開 `style.css` 檔案**。
+2.  **找到 `body` 選擇器**：
+    ```css
+    body {
+      background-color: #0b0d1a;
+    }
+    ```
 3.  **修改背景色**：將 `#0b0d1a` 這個十六進位色碼更換為您想要的任何顏色。您可以使用 [HTML Color Picker](https://htmlcolorcodes.com/) 這類工具來尋找喜歡的顏色代碼。
 4.  **同步卡片顏色**（建議）：
-    -   打開 `App.tsx` 檔案。
-    -   找到 `<main>` 標籤，在其 `className` 中找到 `bg-[#0b0d1a]`。
-    -   將這裡的色碼改成和 `<body>` 標籤相同的顏色，以保持視覺一致性。
+    -   打開 `script.js` 檔案。
+    -   搜尋 `bg-[#0b0d1a]` 找到主卡片（`<main>`）的設定行。
+    -   將這裡的色碼改成和 `body` 相同的顏色，以保持視覺一致性。
 
 ---
 

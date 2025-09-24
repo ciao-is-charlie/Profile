@@ -27,6 +27,9 @@
       }
     </script>
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Custom Web Thumbnail / Social Media Preview -->
     <meta property="og:title" content="查理 | Personal Profile" />
     <meta property="og:description" content="Welcome to my personal page." />
@@ -39,9 +42,12 @@
     <!-- Replace this URL with a link to your custom preview image -->
     <meta name="twitter:image" content="https://picsum.photos/seed/charlieprofile/1200/630" />
 
-</head>
-  <body style="background-color: #0b0d1a;" class="font-serif-classical">
+    <!-- React -->
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js" crossorigin></script>
+  </head>
+  <body class="font-serif-classical">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>

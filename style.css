@@ -1,0 +1,34 @@
+body {
+  background-color: #0b0d1a;
+}
+
+/* Liquid light effect base */
+.liquid-effect-base::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.liquid-effect-base:hover::before {
+  opacity: 1;
+}
+
+.liquid-effect-base:hover {
+   border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Liquid light effect for Link Blocks */
+.liquid-link::before {
+  border-radius: 9999px; /* from rounded-full */
+  background: radial-gradient(350px circle at var(--mouse-x) var(--mouse-y),rgba(255,255,255,0.15),transparent 80%);
+}
+
+/* Liquid light effect for Character Sections */
+.liquid-character-card::before {
+  border-radius: 1.5rem; /* from rounded-3xl */
+  background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),rgba(255,255,255,0.15),transparent 80%);
+}
