@@ -1,7 +1,8 @@
+
 {
   "profile": {
     "name": "Charlie",
-    "avatarUrl": "https://cdn.midjourney.com/42082cd4-64a9-460a-881a-1c6774a5d17b/0_0.png"
+    "avatarUrl": "./Assets/avatar-main.png"
   },
   "socials": [
     {
@@ -9,69 +10,63 @@
       "url": "https://www.threads.com/@ciao.is.charlie"
     }
   ],
-  "bio": "查理\n社恐｜雙魚｜已成年",
+  "bio": "Welcome to my digital space.\nI'm passionate about art, technology, and creating beautiful things. Feel free to explore my work and get in touch.",
   "links": [
     {
       "id": 1,
-      "title": "查理事務所 - 領GPT連結DC",
+      "title": "查理事務所",
       "url": "https://discord.gg/FB42uFa5Wd",
-      "imageUrl": "https://cdn.midjourney.com/0ce2cb00-5d85-4405-ab59-77a7e9bc7b2e/0_0.png",
+      "imageUrl": "./Assets/dc-icon.png",
       "icon": "discord"
     },
     {
       "id": 2,
       "title": "卿卿我我",
-      "url": "https://abr.ge/oz2uc4",
-      "imageUrl": "https://cdn.midjourney.com/53ba374f-7765-40ae-84e8-a376b83dbe05/0_3.png"
-    },
-    {
-      "id": 3,
-      "title": "作品集（待更新）",
-      "url": "#",
-      "imageUrl": "https://cdn.midjourney.com/42082cd4-64a9-460a-881a-1c6774a5d17b/0_0.png"
+      "url": "https://abr.ge/oz2uc4$0",
+      "imageUrl": "./Assets/75-icon.png"
     }
   ],
   "characters": [
     {
       "id": 1,
-      "imageUrl": "https://cdn.midjourney.com/bc853ce0-26c5-47d0-91ca-91bc0f00ca0a/0_1.png",
+      "imageUrl": "./Assets/char-nora.png",
       "name": "諾拉",
-      "description": "（待補）",
+      "description": "（測試）",
       "imagePosition": "left"
     },
     {
       "id": 2,
-      "imageUrl": "https://cdn.midjourney.com/fd92b8f2-b3a0-4657-89f9-41093625bf22/0_1.png",
+      "imageUrl": "./Assets/char-nam.png",
       "name": "南星",
-      "description": "（待補）",
+      "description": "（測試）",
       "imagePosition": "right"
     },
     {
       "id": 3,
-      "imageUrl": "https://cdn.midjourney.com/a26e6749-8393-4cce-a8e0-a1300ad2c6ba/0_3.png",
+      "imageUrl": "./Assets/char-sumo.png",
       "name": "蘇墨",
-      "description": "（待補）",
+      "description": "（測試）",
       "imagePosition": "left"
     },
     {
       "id": 4,
-      "imageUrl": "https://cdn.midjourney.com/27581365-300c-4854-8334-03d4da400d64/0_1.png",
+      "imageUrl": "./Assets/char-brave.png",
       "name": "勇者",
-      "description": "（待補）",
+      "description": "（測試）",
       "imagePosition": "right"
     },
     {
       "id": 5,
-      "imageUrl": "https://cdn.midjourney.com/0367bc20-4554-4fe2-b353-8f7d28603fc2/0_3.png",
+      "imageUrl": "./Assets/char-tiger.png",
       "name": "老虎大人",
-      "description": "（待補）",
+      "description": "（測試）",
       "imagePosition": "left"
     },
     {
       "id": 6,
-      "imageUrl": "https://cdn.midjourney.com/a408aad7-b75b-4f03-9a20-17e1821281a8/0_0.png",
+      "imageUrl": "./Assets/char-vlad.png",
       "name": "弗拉德米爾",
-      "description": "（待補）",
+      "description": "（測試）",
       "imagePosition": "right"
     }
   ]

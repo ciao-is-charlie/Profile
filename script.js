@@ -1,5 +1,8 @@
 
 (() => {
+    // Disable right-click context menu across the entire site
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
     const { useState, useEffect, useRef, StrictMode, createElement: e } = React;
 
     const ThreadsIcon = (props) => (
