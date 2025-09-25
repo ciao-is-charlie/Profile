@@ -31,42 +31,42 @@
       "id": 1,
       "imageUrl": "./Assets/char-nora.png",
       "name": "諾拉",
-      "description": "（測試）",
+      "description": "（待更新）",
       "imagePosition": "left"
     },
     {
       "id": 2,
       "imageUrl": "./Assets/char-nam.png",
       "name": "南星",
-      "description": "（測試）",
+      "description": "（待更新）",
       "imagePosition": "right"
     },
     {
       "id": 3,
       "imageUrl": "./Assets/char-sumo.png",
       "name": "蘇墨",
-      "description": "（測試）",
+      "description": "（待更新）",
       "imagePosition": "left"
     },
     {
       "id": 4,
       "imageUrl": "./Assets/char-brave.png",
       "name": "勇者",
-      "description": "（測試）",
+      "description": "（待更新）",
       "imagePosition": "right"
     },
     {
       "id": 5,
       "imageUrl": "./Assets/char-tiger.png",
       "name": "老虎大人",
-      "description": "（測試）",
+      "description": "（待更新）",
       "imagePosition": "left"
     },
     {
       "id": 6,
       "imageUrl": "./Assets/char-vlad.png",
       "name": "弗拉德米爾",
-      "description": "（測試）",
+      "description": "（待更新）",
       "imagePosition": "right"
     }
   ]
